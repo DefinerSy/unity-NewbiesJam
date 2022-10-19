@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sapling : MonoBehaviour
+public class BranchDirection : MonoBehaviour
 {
-    public GameObject growChooseUI;
+    public GameObject directionUI;
     public Camera m_Camera;
     // Start is called before the first frame update
     void Start()
@@ -15,24 +15,24 @@ public class Sapling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MouseDown();
+        BranchUI();
     }
 
-    private void MouseDown()//鼠标点击带苗树枝时GrowChooseUI开启
+    public void BranchUI()
     {
         if(Input.GetMouseButtonDown(0))
         {
-            //growChooseUI.SetActive(true);
+            //directionUI.SetActive(true);
             Ray ray = m_Camera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
                 Debug.DrawLine(ray.origin, hit.point);
                 GameObject gameobj = hit.collider.gameObject;
-                if (gameobj.tag == "Sapling")
+                if (gameobj.tag == "Branch")
                 {
-                    growChooseUI.transform.position = Input.mousePosition;
-                    growChooseUI.SetActive(true);
+                    directionUI.transform.position = Input.mousePosition;
+                    directionUI.SetActive(true);
                 }
             }
         }

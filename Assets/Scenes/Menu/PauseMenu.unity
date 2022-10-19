@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 23707290}
   - component: {fileID: 23707292}
   - component: {fileID: 23707291}
+  - component: {fileID: 23707293}
   m_Layer: 5
   m_Name: DirectionChoose
   m_TagString: Untagged
@@ -203,6 +204,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23707289}
   m_CullTransparentMesh: 1
+--- !u!114 &23707293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23707289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54a32cd00e374e48b952a1980803da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  branch: {fileID: 1907083908}
+  rectTrans: {fileID: 23707290}
+  offset: {x: 0, y: 0}
 --- !u!1 &242309094
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,8 +554,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 115, y: 0}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: 130, y: 0}
+  m_SizeDelta: {x: 110.253, y: 113.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &501625059
 MonoBehaviour:
@@ -605,8 +621,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 6b83eb4c8bfdc5248be91bb6fe1b5296, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -759,7 +775,7 @@ GameObject:
   - component: {fileID: 538381000}
   m_Layer: 0
   m_Name: Sapling
-  m_TagString: Untagged
+  m_TagString: Sapling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -835,7 +851,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538380995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.34, y: -2.754, z: 0}
+  m_LocalPosition: {x: -0.76, y: 0.83, z: 0}
   m_LocalScale: {x: 1.1179, y: 1.1179, z: 1.1179}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -855,6 +871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growChooseUI: {fileID: 1696856008}
+  m_Camera: {fileID: 1095522109}
 --- !u!1001 &588341185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1142,8 +1159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 104}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: 0, y: 130}
+  m_SizeDelta: {x: 113.5, y: 110.253}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &765784822
 MonoBehaviour:
@@ -1209,8 +1226,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 4ffd37122c0c87040b09b721f75787fd, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1263,8 +1280,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -113, y: 0}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: -130, y: 0}
+  m_SizeDelta: {x: 110.253, y: 113.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &806322382
 MonoBehaviour:
@@ -1330,8 +1347,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 03f28d5f9f939684b90f39ecf1dd815c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1841,7 +1858,6 @@ GameObject:
   - component: {fileID: 1696856013}
   - component: {fileID: 1696856012}
   - component: {fileID: 1696856014}
-  - component: {fileID: 1696856015}
   m_Layer: 5
   m_Name: GrowChoose
   m_TagString: Untagged
@@ -1994,19 +2010,6 @@ MonoBehaviour:
   sapling: {fileID: 538380995}
   rectTrans: {fileID: 1696856009}
   offset: {x: 0, y: 0}
---- !u!114 &1696856015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1696856008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9edc2b64cf9fba84aa39ead8866b0d1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  directionUI: {fileID: 23707289}
 --- !u!1 &1782834100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2140,8 +2143,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -113}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: 0, y: -130}
+  m_SizeDelta: {x: 113.5, y: 110.253}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1891093602
 MonoBehaviour:
@@ -2207,8 +2210,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 4341edc90e465c4418232fc033b3f9bb, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2237,9 +2240,10 @@ GameObject:
   - component: {fileID: 1907083911}
   - component: {fileID: 1907083910}
   - component: {fileID: 1907083909}
+  - component: {fileID: 1907083913}
   m_Layer: 0
   m_Name: Branch
-  m_TagString: Untagged
+  m_TagString: Branch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2316,13 +2320,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907083908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6115, y: -2.1684, z: 0.30094543}
-  m_LocalScale: {x: 1.0231, y: 1.1616, z: 1}
+  m_LocalPosition: {x: 2.78, y: 2.01, z: 0.30094543}
+  m_LocalScale: {x: 1.0692418, y: 0.5504822, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1907083913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907083908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9edc2b64cf9fba84aa39ead8866b0d1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  directionUI: {fileID: 23707289}
+  m_Camera: {fileID: 1095522109}
 --- !u!1 &2028611055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2620,7 +2638,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1696856015}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Choose, Assembly-CSharp
         m_MethodName: GrowBranch
         m_Mode: 1
