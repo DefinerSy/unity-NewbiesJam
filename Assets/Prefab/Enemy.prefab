@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyHp: 2
   AttackRange: 3
+  isDestory: 0
 --- !u!61 &8125212705652833959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -137,7 +138,7 @@ Animator:
   m_GameObject: {fileID: 8125212705652833944}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f3a9a467dc6499e409dc2bd8e9e70200, type: 2}
+  m_Controller: {fileID: 9100000, guid: cfdda00b12473144280881262d0ed5e2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
