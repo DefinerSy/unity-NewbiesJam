@@ -8,6 +8,7 @@ public class EnemyAction : MonoBehaviour
     [SerializeField] public int EnemyHp = 3;
     [SerializeField] private float AttackRange = 3;
     BoxCollider2D EnemyAttackRange;
+    public bool isDestory = false;
     private Animator animator;
 
     private void Awake()
@@ -17,8 +18,18 @@ public class EnemyAction : MonoBehaviour
     }
     private void Start()
     {
+        isDestory = false;
         EnemyAttackRange.size = new Vector2(AttackRange, AttackRange);
     }
+
+    private void Update()
+    {
+        if (isDestory == true)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         GameObject obj = other.gameObject;
@@ -42,10 +53,10 @@ public class EnemyAction : MonoBehaviour
     {
         if (EnemyHp <= 0)
         {
-            this.EnemyAttackRange.enabled = false;
-            animator.Play("EnemyDestory");//敌人HP为0时 禁用碰撞 并移出视角
+            animator.Play("EnemyDestory");//敌人HP为0时
         }
         yield return null;
     }
+
 }
 
