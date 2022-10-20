@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Cost : MonoBehaviour
 {
     public Text costText;
-    private int cost;
+    public int cost;
     private GameObject[] leaf_array;
     private int leaf_count;
     public bool roundIsStart = false;//接口
@@ -35,8 +35,5 @@ public class Cost : MonoBehaviour
         costText.text = cost.ToString();
     }
 
-    public void BranchCost()//生成新树干时花费cost
-    {
 
-    }
 }

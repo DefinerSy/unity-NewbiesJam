@@ -6,10 +6,13 @@ public class BranchDirection : MonoBehaviour
 {
     public GameObject directionUI;
     public Camera m_Camera;
+    public RectTransform rectTrans;
+    private Vector2 offset;
+    Transform bra;
     // Start is called before the first frame update
     void Start()
     {
-        
+        bra = this.GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -33,6 +36,8 @@ public class BranchDirection : MonoBehaviour
                 {
                     directionUI.transform.position = Input.mousePosition;
                     directionUI.SetActive(true);
+                    //Vector2 screenPos = Camera.main.WorldToScreenPoint(bra.transform.position);
+                    //rectTrans.position = screenPos + offset;
                 }
             }
         }

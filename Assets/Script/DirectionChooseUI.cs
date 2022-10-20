@@ -6,7 +6,7 @@ public class DirectionChooseUI : MonoBehaviour
 {
     public GameObject branch;
     public RectTransform rectTrans;
-    public Vector2 offset;
+    private Vector2 offset;
     Transform bra;
     // Start is called before the first frame update
     void Start()
