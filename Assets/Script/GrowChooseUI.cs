@@ -17,6 +17,7 @@ public class GrowChooseUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //修正树苗生长选择UI位置
         Vector2 screenPos = Camera.main.WorldToScreenPoint(sap.transform.position);
         rectTrans.position = screenPos + offset;
     }

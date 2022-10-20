@@ -18,7 +18,7 @@ public class BranchDirection : MonoBehaviour
         BranchUI();
     }
 
-    public void BranchUI()
+    public void BranchUI()//鼠标左键单击树干时在树干位置出现树干生长方向UI
     {
         if(Input.GetMouseButtonDown(0))
         {
@@ -29,7 +29,7 @@ public class BranchDirection : MonoBehaviour
             {
                 Debug.DrawLine(ray.origin, hit.point);
                 GameObject gameobj = hit.collider.gameObject;
-                if (gameobj.tag == "Branch")
+                if ((gameobj.tag == "Branch2") || (gameobj.tag == "Branch3") || (gameobj.tag == "Branch4"))
                 {
                     directionUI.transform.position = Input.mousePosition;
                     directionUI.SetActive(true);

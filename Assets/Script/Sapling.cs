@@ -18,7 +18,7 @@ public class Sapling : MonoBehaviour
         MouseDown();
     }
 
-    private void MouseDown()//鼠标点击带苗树枝时GrowChooseUI开启
+    private void MouseDown()//鼠标左键单击树苗时在树苗位置树苗生长选择UI
     {
         if(Input.GetMouseButtonDown(0))
         {

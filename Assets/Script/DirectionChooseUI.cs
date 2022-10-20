@@ -17,6 +17,7 @@ public class DirectionChooseUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //修正选择树干生长方向UI位置
         Vector2 screenPos = Camera.main.WorldToScreenPoint(bra.transform.position);
         rectTrans.position = screenPos + offset;
     }

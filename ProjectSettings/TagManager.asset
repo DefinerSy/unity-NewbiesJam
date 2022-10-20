@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Sapling
   - Branch
+  - Spine
+  - Leaf
+  - Branch2
+  - Branch3
+  - Branch4
   layers:
   - Default
   - TransparentFX
