@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CloseGrowUI : MonoBehaviour
+public class LeadUI : MonoBehaviour
 {
-    public GameObject closeGrow;
+    public GameObject leadTextBox;
     // Start is called before the first frame update
     void Start()
     {
-        
+        leadTextBox.SetActive(true);
     }
 
     // Update is called once per frame
@@ -17,8 +17,8 @@ public class CloseGrowUI : MonoBehaviour
         
     }
 
-    public void CloseUI()//¹Ø±ÕGrowChooseUI
+    public void CloseLeadUI()
     {
-        closeGrow.SetActive(false);
+        leadTextBox.SetActive(false);
     }
 }

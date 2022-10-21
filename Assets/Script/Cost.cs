@@ -7,13 +7,14 @@ public class Cost : MonoBehaviour
 {
     public Text costText;
     public int cost;
+    public int deltaCost;
     private GameObject[] leaf_array;
     private int leaf_count;
     public bool roundIsStart = false;//½Ó¿Ú
     // Start is called before the first frame update
     void Start()
     {
-        cost = 5;
+        //cost = 5;
         costText.text = cost.ToString();
     }
 
@@ -31,7 +32,7 @@ public class Cost : MonoBehaviour
     {
         leaf_array = GameObject.FindGameObjectsWithTag("Leaf");
         leaf_count = leaf_array.Length;
-        cost = 5 + leaf_count;
+        cost = cost + deltaCost + leaf_count;
         costText.text = cost.ToString();
     }
 

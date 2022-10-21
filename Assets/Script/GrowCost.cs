@@ -10,7 +10,7 @@ public class GrowCost : MonoBehaviour
     public GameObject spineButton;
     public GameObject leafButton;
     public GameObject growUI;
-    public int currentcost;
+    private int currentcost;
 
     // Start is called before the first frame update
     void Start()
